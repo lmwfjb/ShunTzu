@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="course.css">
+</head>
+
+<body>
+    <div id="course">
+        <div class="course_title">近期課程</div>
+        <div class="course_container">
+            <div class="cardContainer">
+                <div class="card">
+                    <div class="front">
+                        <img src="img/c1.jpg" alt="">
+                        <div class="course_description">餐桌上的漂流木 - 創意餐具手作課程<br>
+                            <span class="seemore">more&nbsp;<i class="fas fa-long-arrow-alt-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card_content">
+                            <h3 class="card_title">餐桌上的漂流木 - 創意餐具手作課程</h3>
+                            <div class="card_information">
+                                時間：2020/3/5 (六) 15:00-17:30<br />
+                                地點：台南市府前路二段18巷355號<br />
+                                費用：600/人、1500/3人（含材料費）<br />                              
+                            </div>
+                            <div class="back_button">
+                                <span class="backto"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;back</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div class="card">
+                    <div class="front">
+                        <img src="img/c2.jpg" alt="">
+                        <div class="course_description">紳士品味質感萬年筆 - 手磨鋼筆課程<br>
+                            <span class="seemore">more&nbsp;<i class="fas fa-long-arrow-alt-right"></i></span>
+                        </div>                      
+                    </div>
+                    <div class="back">
+                        <div class="card_content">
+                            <h3 class="card_title">紳士品味質感萬年筆 - 手磨鋼筆課程</h3>
+                            <div class="card_information">
+                                時間：2020/4/4 (六) 14:30-17:30<br />
+                                地點：台南市永大路永二街8號<br />
+                                費用：900/人、2500/3人（含材料費）<br />                             
+                            </div>
+                            <div class="back_button">
+                                <div class="backto"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;back</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+
+        $('.card').click(function () {
+            $(this).toggleClass('flipped');
+        });
+    </script>
+</body>
+
+</html>

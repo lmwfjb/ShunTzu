@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <div id="gallery">
+        <div class="gallery_title">經典作品</div>
+        <div class="section animate">
+            <div class="middle">
+                <img src="img/gallery/1-1.jpg" alt="">
+            </div>
+            <div class="left title">
+                <div class="content">
+                    <h2>Japanese Maple 色木槭</h2>
+                    <p>木質緊密強韌，由於是淡色系的木材，所以應用範圍很廣。古時用於製作小刀刀鞘，現在多用於製作鋼琴的擊弦機。將樹的汁液煮至粘稠後製成的楓蜜也很有名。</p>
+                </div>
+            </div>
+            <div class="right tiles">
+                <img src="img/gallery/1-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="section">
+            <div class="middle">
+                <img src="img/gallery/2-1.jpg" alt="">
+            </div>
+            <div class="right title">
+                <div class="content">
+                    <h2>Oak 橡木</h2>
+                    <p>蒼勁有力的紋理彰顯了獨特的存在感。此外，橡木獨特的纖維結構有時會呈現出與虎背上的條紋相似的銀色「虎斑紋」紋理，可以欣賞到獨具個性的豐富木紋。</p>
+                </div>
+            </div>
+            <div class="left tiles">
+                <img src="img/gallery/2-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="section">
+            <div class="middle">
+                <img src="img/gallery/3-1.jpg" alt="">
+            </div>
+            <div class="right tiles">
+                <img src="img/gallery/3-2.jpg" alt="">
+            </div>
+            <div class="left title">
+                <div class="content">
+                    <h2>Black Walnut 黑胡桃木</h2>
+                    <p>在嚴寒的環境下歷經漫長歲月生長而成，材質堅硬且不乏韌性。重量較輕，特點是容易加工。從邊材到心材，程由淺而深漸層的色澤，描繪出了美麗的模樣。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var $sm = 480;
+            var $md = 768;
+
+            function resizeThis() {
+                $imgH = $('.middle img').width();
+                if ($(window).width() >= $sm) {
+                    $('.left,.right,.section').css('height', $imgH);
+                } else {
+                    $('.left,.right,.section').css('height', 'auto');
+                }
+            }
+            resizeThis();
+
+            $(window).resize(function () {
+                resizeThis();
+            });
+            $(window).scroll(function () {
+                $('.section').each(function () {
+                    var $elementPos = $(this).offset().top;
+                    var $scrollPos = $(window).scrollTop();
+                    var $sectionH = $(this).height();
+                    var $h = $(window).height();
+                    var $sectionVert = (($h / 2) - ($sectionH / 4));
+                    if (($elementPos - $sectionVert) <= $scrollPos && ($elementPos - $sectionVert) + $sectionH > $scrollPos) {
+                        $(this).addClass('animate');
+                    } else {
+                        $(this).removeClass('animate');
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

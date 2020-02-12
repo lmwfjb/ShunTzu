@@ -1,0 +1,56 @@
+body{
+    /* font-family: 'Noto Sans TC', sans-serif; */
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header{
+    /* background-color: bisque; */
+}
+
+.container{
+    height: 110px;
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.logo {
+    /* height : 200px;
+    width : 200px;
+    text-align : center;
+    margin: auto;
+    line-height : 200px; */
+    /* background-color: rgb(172, 157, 139); */
+}
+.logo img{
+    width: 120px;
+    /* margin: 0 auto;
+    padding: 30px; */
+}
+
+.menu-list{
+    display:flex;
+    flex-direction:row;   
+    /* justify-content:center; */
+}
+.menu-list li{
+    padding: 0 15px;
+}
+
+.menu-list li a{
+    display:block;
+    color: rgb(49, 23, 5);
+}
+
+.banner{
+    margin:0;
+    padding:0;
+}
+
+.banner img{
+    width: 100%;
+}
+
+

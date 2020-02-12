@@ -1,0 +1,149 @@
+#gallery {
+	 font-family: 'STSong';
+}
+
+/* ------往下滑的跳動------ */
+ /* .header .bounce, .footer .bounce {
+	 -webkit-animation-name: bounce;
+	 animation-name: bounce;
+	 -webkit-transform-origin: center bottom;
+	 transform-origin: center bottom;
+	 animation-iteration-count: infinite;
+	 -webkit-animation-iteration-count: infinite;
+} 
+ .header .animated, .footer .animated {
+	 -webkit-animation-duration: 2s;
+	 animation-duration: 2s;
+	 -webkit-animation-fill-mode: both;
+	 animation-fill-mode: both;
+}*/
+/* ------往下滑的跳動------ */
+.gallery_title{
+	width: 100%;
+    height: 150px;
+    font-size: 26px;
+    color: #261506;
+    text-align: center;
+    line-height: 150px;
+    font-weight: 600;
+}
+ .section {
+	 width: 100%;
+	 position: relative;
+}
+ .section .left, .section .middle, .section .right {
+	 width: 100%;
+	 display: block;
+	 color: #413122;
+	 box-sizing: border-box;
+	 /* padding: 30px; */
+	 text-align: center;
+	 overflow: hidden;
+	 transition: 0.3s ease-in-out all;
+}
+ @media (min-width: 480px) {
+	 .section .left .content, .section .middle .content, .section .right .content {
+		 position: relative;
+		 top: 50%;
+		 transform: translateY(-50%);
+	}
+}
+ @media (min-width: 480px) {
+	 .section .left, .section .middle, .section .right {
+		 width: 50%;
+		 font-size: 0.9em;
+		 padding: 10px;
+		 left: 0;
+		 float: left;
+		 position: absolute;
+	}
+}
+ @media (min-width: 768px) {
+	 .section .left, .section .middle, .section .right {
+		 width: 33.33333%;
+		 left: 33.33%;
+		 padding: 10px;
+	}
+}
+ @media (min-width: 992px) {
+	 .section .left, .section .middle, .section .right {
+		 padding: 30px;
+		 font-size: 1em;
+	}
+}
+ .section.animate .left {
+	 left: 0;
+}
+ @media (min-width: 480px) {
+	 .section.animate .left {
+		 left: 50%;
+	}
+}
+ @media (min-width: 768px) {
+	 .section.animate .left {
+		 left: 0;
+	}
+}
+ .section.animate .right {
+	 left: 0;
+}
+ @media (min-width: 480px) {
+	 .section.animate .right {
+		 left: 50%;
+	}
+}
+ @media (min-width: 768px) {
+	 .section.animate .right {
+		 left: 66.66%;
+	}
+}
+ .section .title {
+	 background: rgb(226, 212, 196);
+}
+ .section .title h2 {
+	 margin-top: 0;
+}
+ .section .title p {
+	 line-height: 1.55em;
+	 margin-bottom: 0.75em;
+}
+ .section .tiles {
+	 padding: 0;
+	 clear: both;
+	 display: none;
+	 float: none;
+}
+ .section .tiles img {
+	 width: 100%;
+	 transition: 0.8s ease-in-out all;
+}
+ .section .tiles img:hover {
+	transform:scale(1.4,1.4);
+}
+ @media (min-width: 768px) {
+	 .section .tiles {
+		 display: block;
+	}
+}
+ .section .middle {
+	 z-index: 2;
+	 padding: 0;
+}
+ .section .middle img {
+	 width: 100%;
+	 height: auto;
+	 display: block;
+}
+ @keyframes bounce {
+	 0%, 20%, 50%, 80%, 100% {
+		 transform: translateY(0);
+	}
+	 40% {
+		 transform: translateY(-20px);
+	}
+	 60% {
+		 transform: translateY(-10px);
+	}
+}
+
+ 
