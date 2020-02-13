@@ -56,7 +56,6 @@
             </div>
         </div>
     </div>
-
     <!-- gallery start!------------------------------------->
     <div id="gallery">
         <div class="gallery_title">經典作品</div>
@@ -114,8 +113,8 @@
                     <div class="front">
                         <img src="img/c1.jpg" alt="">
                         <div class="course_description">餐桌上的漂流木 - 創意餐具手作課程<br>
-                            <span class="seemore">more&nbsp;<i class="fas fa-long-arrow-alt-right"></i></span>
                         </div>
+                        <span class="seemore">more&nbsp;<i class="fas fa-long-arrow-alt-right"></i></span>
                     </div>
                     <div class="back">
                         <div class="card_content">
@@ -150,7 +149,6 @@
                             </div>
                             <div class="back_button">
                                 <div class="backto"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;back</div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -158,12 +156,14 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- course end!------------------------------------->
 
     <div id="contact">
         <div class="contact_title">聯絡我們</div>
         <div class="contact_container">
-            <div class="contact_area"></div>
+            <div class="contact_area">
+            </div>
             <div class="contact_picture">
                 <img src="img/contact.jpg" alt="">
             </div>
@@ -183,10 +183,28 @@
         </div>
         <div class="copyright">© 2020 Sun-Tzu</div>
     </div>
-
+    <div id="toTop">
+        <i class="fa fa-chevron-up"></i>
+    </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
     <script>
+        //header-----------------------
+        var header = $('.banner');
+        var range = 200;
+        $(window).on('scroll', function () {
+            var scrollTop = $(this).scrollTop(),
+                height = header.outerHeight(),
+                offset = height / 2,
+                calc = 1 - (scrollTop - offset + range) / range;
+            header.css({ 'opacity': calc });
+            if (calc > '1') {
+                header.css({ 'opacity': 1 });
+            } else if (calc < '0') {
+                header.css({ 'opacity': 0.2 });
+            }
+        });
+        //header-----------------------
 
         // course-----------------------
         $('.card').click(function () {
@@ -194,7 +212,7 @@
         });
         // course-----------------------
 
-
+        // gallery-----------------------
         var $sm = 480;
         var $md = 768;
 
@@ -225,6 +243,42 @@
                 }
             });
         });
+        // gallery----------------------
+
+        // toTop-----------------------
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $("#toTop").fadeIn();
+            } else {
+                $("#toTop").fadeOut();
+            }
+        });
+        $("#toTop").click(function () {
+            $("body,html").animate({
+                scrollTop: 0
+            }, 800);
+        });
+        // toTop-----------------------
+
+        // animation-----------------------
+        $(function () {
+            $(window).scroll(function () {
+                var y = $(this).scrollTop();
+                if (y > 700) {
+                    $('.content-area .text').addClass('animate');
+                };
+            });
+        });//banner
+
+        $('.menu_container a').click(function () {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 300);
+            return false;
+        })//to id below
+
+
+
 
     </script>
 </body>
