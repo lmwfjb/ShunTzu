@@ -127,48 +127,59 @@
     <!-- course start!----------------------------------- -->
     <div id="course">
         <div class="course_title">近期課程</div>
-        <div class="course_container">
-            <div class="cardContainer">
-                <div class="card">
-                    <div class="front">
+        <div class="course_block">
+            <div class="course_card">
+                <div class="card_inner">
+                    <div class="card_front">
                         <img src="img/c1.jpg" alt="">
-                        <div class="course_description">餐桌上的漂流木 - 創意餐具手作課程<br>
+                        <div class="course_description">餐桌上的漂流木 - 創意餐具手作課程</div>
+                        <div class="aa flip_to_back">
+                            <span class="flip_border">more&nbsp;<i class="fas fa-long-arrow-alt-right"></i></span>
                         </div>
-                        <span class="seemore">more&nbsp;<i class="fas fa-long-arrow-alt-right"></i></span>
                     </div>
-                    <div class="back">
+                    <div class="card_back">
                         <div class="card_content">
-                            <div class="card_title">餐桌上的漂流木 - 創意餐具手作課程</div>
+                            <h3 class="card_title">餐桌上的漂流木 - 創意餐具手作課程</h3>
                             <div class="card_information">
-                                時間：2020/3/5 (六) 15:00-17:30<br />
-                                地點：台南市府前路二段18巷355號<br />
-                                費用：600/人、1500/3人（含材料費）<br />
+                                時間：2020/3/5 (六) 15:00-17:30<br>
+                                地點：台南市府前路二段18巷355號<br>
+                                費用：600/人、1500/3人（含材料費）<br>
                             </div>
-                            <div class="back_button">
-                                <div class="backto"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;back</div>
+                            <div class="sign_up">
+                                <a href="https://www.beclass.com/" target="_blank">報名連結 <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="aa flip_to_front">
+                                <span class="flip_border"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;back</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="cardContainer">
-                <div class="card">
-                    <div class="front">
+            <div class="course_card">
+                <div class="card_inner">
+                    <div class="card_front">
                         <img src="img/c2.jpg" alt="">
-                        <div class="course_description">紳士品味質感萬年筆 - 手磨鋼筆課程<br>
+                        <div class="course_description">紳士品味質感萬年筆 - 手磨鋼筆課程</div>
+                        <div class="aa flip_to_back">
+                            <span class="flip_border">more&nbsp;<i class="fas fa-long-arrow-alt-right"></i></span>
                         </div>
-                        <span class="seemore">more&nbsp;<i class="fas fa-long-arrow-alt-right"></i></span>
                     </div>
-                    <div class="back">
+                    <div class="card_back">
                         <div class="card_content">
-                            <div class="card_title">紳士品味質感萬年筆 - 手磨鋼筆課程</div>
+                            <h3 class="card_title">紳士品味質感萬年筆 - 手磨鋼筆課程</h3>
                             <div class="card_information">
                                 時間：2020/4/4 (六) 14:30-17:30<br />
                                 地點：台南市永大路永二街8號<br />
                                 費用：900/人、2500/3人（含材料費）<br />
+
                             </div>
-                            <div class="back_button">
-                                <div class="backto"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;back</div>
+                            <div class="sign_up">
+                                <a href="https://www.beclass.com/" target="_blank">報名連結 <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="aa flip_to_front">
+                                <span class="flip_border"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;back</span>
                             </div>
                         </div>
                     </div>
@@ -263,10 +274,16 @@
         //header-----------------------
 
         // course-----------------------
-        $('.card').click(function () {
-            $(this).toggleClass('flipped');
-        });
-        
+        // $('.card').click(function () {
+        //     $(this).toggleClass('flipped');
+        // });
+        $(".flip_border").click(function () {
+            if ($(this).parent().hasClass("flip_to_back")) {
+                $(this).parents(".card_inner").addClass("flip");
+            } else {
+                $(this).parents(".card_inner").removeClass("flip");
+            }
+        })
 
         // course-----------------------
 
