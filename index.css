@@ -194,7 +194,11 @@ body {
     /* height: 900px; */
     margin-bottom: 200px;
 }
-
+@media screen and (max-width:500px){
+    #course{
+        margin-bottom: 75px;
+    }
+}
 .course_title {
     margin-top: 100px;
     width: 100%;
@@ -295,7 +299,7 @@ body {
 }
 
 .flip_to_back {
-    padding-top: 20px;
+    margin-top: 20px;
     margin-left: 70%;
 }
 
@@ -323,7 +327,6 @@ body {
     padding: 25px 0px;
     font-size: 21px;
 }
-
 @media screen and (max-width:400px) {
     .card_title {
         font-size: 18px;
@@ -367,9 +370,15 @@ body {
         padding: 0px 20px;
         font-size: 19px;
     }
-
+    .card_title{
+        padding: 15px 0px 0px;
+        font-size: 18px;
+    }
+    .flip_to_back{
+        margin-top: 15px;
+    }
     .flip_to_front {
-        padding-top: 20%;
+        margin-top: 20%;
         margin-left: 10%;
     }
 }
@@ -568,25 +577,6 @@ body {
     display: block;
 }
 
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-20px);
-    }
-
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
 /* contact end----------------------------*/
 /* contact end----------------------------*/
 /* contact end----------------------------*/
@@ -640,6 +630,10 @@ input[type="email"],
     height: 35px;
     line-height: 35px;
 }
+.msght{
+    max-height: 150px;
+    min-height:35px;
+}
 
 .form-group input:focus,
 .form-group textarea:focus,
@@ -671,16 +665,6 @@ select {
         margin: auto;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* contact end----------------------------*/
 /* contact end----------------------------*/
