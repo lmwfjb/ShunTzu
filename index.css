@@ -274,6 +274,7 @@ body {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 3px;
 }
 
 .card_back {
@@ -626,7 +627,6 @@ input[type="name"],
 input[type="phone"],
 input[type="email"],
 .form-control {
-    border-radius: 1px;
     background-color: rgba(255, 255, 255, 0);
     height: 35px;
     line-height: 35px;
@@ -666,7 +666,6 @@ select.form-control{
     color: #261506;
     font-family: 'STSong', 'STFangsong', 'FangSong', 'Noto Serif TC', serif;
 }
-
 @media screen and (max-width:900px) {
     .contact_container .contact_form {
         width: 80%;
