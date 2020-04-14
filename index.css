@@ -140,7 +140,7 @@ body {
     font-weight: 500;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1020px) {
     #about {
         height: 1000px;
         background: linear-gradient(170deg, transparent 500px, rgb(238, 235, 231) 0);
@@ -608,9 +608,9 @@ body {
     display: block;
 }
 
-/* contact end----------------------------*/
-/* contact end----------------------------*/
-/* contact end----------------------------*/
+/* gallery end----------------------------*/
+/* gallery end----------------------------*/
+/* gallery end----------------------------*/
 
 
 /* contact start----------------------------*/
@@ -780,7 +780,7 @@ select.form-control {
         height: 200px;
         padding-top: 20px;
         text-align: left;
-        font-size: 16px;
+        font-size: 15px;
         font-family: 'STSong', 'STFangsong', 'FangSong', 'Noto Serif TC', serif;
         font-weight: 500;
         line-height: 28px;
@@ -790,7 +790,7 @@ select.form-control {
     .fb_icon img {
         width: 40px;
         position: absolute;
-        bottom: 50px;
+        bottom: 45px;
         left: 50%;
         margin-left: -20px;
     }
