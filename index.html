@@ -1,6 +1,5 @@
 <!-- <?php
     require_once("backend/database.php");
-
     if(isset($_POST["insert"])){
         $sql= "INSERT INTO message 
                (name,phone,email,type,comment) VALUES   
@@ -12,11 +11,8 @@
         $stmt ->bindParam(":type", $_POST['type'], PDO::PARAM_STR);
         $stmt ->bindParam(":comment", $_POST['comment'], PDO::PARAM_STR);
         $stmt ->execute();
-        // header('Location: index.php');
-    
-    }
-    
-    
+        // header('Location: index.php');  
+    }   
 ?> -->
 <!DOCTYPE html>
 <html lang="en">
@@ -266,19 +262,6 @@
         }
         //header-----------------------
 
-        // course-----------------------
-        // $('.card').click(function () {
-        //     $(this).toggleClass('flipped');
-        // });
-        $(".flip_border").click(function () {
-            if ($(this).parent().hasClass("flip_to_back")) {
-                $(this).parents(".card_inner").addClass("flip");
-            } else {
-                $(this).parents(".card_inner").removeClass("flip");
-            }
-        })
-
-        // course-----------------------
 
         // gallery-----------------------
         var $sm = 480;
@@ -313,6 +296,22 @@
         });
         // gallery----------------------
 
+
+        // course-----------------------
+        // $('.card').click(function () {
+        //     $(this).toggleClass('flipped');
+        // });
+        $(".flip_border").click(function () {
+            if ($(this).parent().hasClass("flip_to_back")) {
+                $(this).parents(".card_inner").addClass("flip");
+            } else {
+                $(this).parents(".card_inner").removeClass("flip");
+            }
+        })
+
+        // course-----------------------
+
+        
         // toTop-----------------------
         $(window).scroll(function () {
             if ($(this).scrollTop() != 0) {

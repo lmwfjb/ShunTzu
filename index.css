@@ -720,7 +720,7 @@ select.form-control {
     height: 390px;
     background-color: #E9E4DE;
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
 }
 
 .footer_logo img {
@@ -733,7 +733,7 @@ select.form-control {
 .footer_info {
     position: absolute;
     left: 50%;
-    margin-left: -130px;
+    margin-left: -120px;
     /* width: 80%; */
     height: 200px;
     padding-top: 20px;
@@ -748,10 +748,12 @@ select.form-control {
 
 .fb_icon img {
     width: 50px;
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    margin-left: -25px;
+    display: block;
+    margin: auto;
+    /* position: absolute; */
+    /* bottom: 60px;
+    left: 50%; */
+    /* margin-left: -25px; */
 }
 
 .copyright {
@@ -775,7 +777,7 @@ select.form-control {
     .footer_info {
         position: absolute;
         left: 50%;
-        margin-left: -110px;
+        margin-left: -100px;
         /* width: 80%; */
         height: 200px;
         padding-top: 20px;
