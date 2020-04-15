@@ -720,7 +720,7 @@ select.form-control {
     height: 390px;
     background-color: #E9E4DE;
     margin: 0 auto;
-    /* position: relative; */
+    position: relative;
 }
 
 .footer_logo img {
@@ -734,9 +734,9 @@ select.form-control {
     position: absolute;
     left: 50%;
     margin-left: -120px;
-    /* width: 80%; */
-    height: 200px;
-    padding-top: 20px;
+    margin-top: 20px;
+    width: 70%;
+    /* height: 200px; */
     text-align: left;
     font-size: 20px;
     font-family: 'STSong', 'STFangsong', 'FangSong', 'Noto Serif TC', serif;
@@ -745,7 +745,10 @@ select.form-control {
     text-decoration: none;
     color: #261506;
 }
-
+.fb_icon{
+    margin-top: 150px;
+    margin-bottom: 12px;
+}
 .fb_icon img {
     width: 50px;
     display: block;
@@ -760,7 +763,7 @@ select.form-control {
     font-size: 16px;
     font-family: 'STSong', 'STFangsong', 'FangSong', 'Noto Serif TC', serif;
     text-align: center;
-    padding-top: 220px;
+    /* padding-top: 220px; */
 }
 
 @media (max-width: 768px) {
@@ -777,30 +780,31 @@ select.form-control {
     .footer_info {
         position: absolute;
         left: 50%;
-        margin-left: -100px;
-        /* width: 80%; */
-        height: 200px;
-        padding-top: 20px;
+        margin-left: -110px;
+        /* height: 200px; */
+        /* padding-top: 20px; */
         text-align: left;
         font-size: 15px;
-        font-family: 'STSong', 'STFangsong', 'FangSong', 'Noto Serif TC', serif;
+        /* font-family: 'STSong', 'STFangsong', 'FangSong', 'Noto Serif TC', serif; */
         font-weight: 500;
         line-height: 28px;
-        color: #261506;
+        /* color: #261506; */
     }
-
+    .fb_icon{
+        margin-top: 115px;
+    }
     .fb_icon img {
         width: 40px;
-        position: absolute;
+        /* position: absolute;
         bottom: 45px;
         left: 50%;
-        margin-left: -20px;
+        margin-left: -20px; */
     }
 
-    .copyright {
+    /* .copyright {
         font-size: 14px;
         padding-top: 180px;
-    }
+    } */
 }
 
 #toTop {
