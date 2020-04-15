@@ -795,16 +795,11 @@ select.form-control {
     }
     .fb_icon img {
         width: 40px;
-        /* position: absolute;
-        bottom: 45px;
-        left: 50%;
-        margin-left: -20px; */
     }
 
-    /* .copyright {
+    .copyright {
         font-size: 14px;
-        padding-top: 180px;
-    } */
+    }
 }
 
 #toTop {
