@@ -733,10 +733,10 @@ select.form-control {
 .footer_info {
     position: absolute;
     left: 50%;
-    margin-left: -120px;
+    margin-left: -140px;
     margin-top: 20px;
-    width: 70%;
-    /* height: 200px; */
+    /* margin-left: 42%; */
+    width: 300px;
     text-align: left;
     font-size: 20px;
     font-family: 'STSong', 'STFangsong', 'FangSong', 'Noto Serif TC', serif;
@@ -779,10 +779,10 @@ select.form-control {
 
     .footer_info {
         position: absolute;
+        width: 224px;
         left: 50%;
-        margin-left: -110px;
-        /* height: 200px; */
-        /* padding-top: 20px; */
+        margin-left: -105px;
+
         text-align: left;
         font-size: 15px;
         /* font-family: 'STSong', 'STFangsong', 'FangSong', 'Noto Serif TC', serif; */
